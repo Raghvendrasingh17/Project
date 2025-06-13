@@ -1,0 +1,218 @@
+.about-section {
+    background-color: #f8f9fa;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .about-text {
+    padding: 20px;
+  }
+  
+  .about-text h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #007bff;
+  }
+  
+  .team-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .team-member {
+    text-align: center;
+  }
+  
+  .team-member h4 {
+    font-size: 1.25rem;
+    margin-top: 10px;
+  }
+  
+  .team-member p {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  
+  .social-media-section {
+    background-color: #f1f1f1;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-icon {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.1);
+  }
+/* Butterfly animation */
+@keyframes flutter {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  25% {
+    transform: translate(50px, -30px) rotate(10deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translate(100px, 0) rotate(20deg);
+    opacity: 0.6;
+  }
+  75% {
+    transform: translate(50px, 30px) rotate(30deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(0, 0) rotate(40deg);
+    opacity: 1;
+  }
+}
+
+/* Butterfly class */
+.butterfly {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('https://via.placeholder.com/50'); /* Replace with a butterfly image */
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  animation: flutter 5s ease-in-out infinite;
+  opacity: 0.8;
+}
+
+.butterfly:nth-child(1) {
+  animation-duration: 6s;
+  left: 10%;
+}
+
+.butterfly:nth-child(2) {
+  animation-duration: 8s;
+  left: 30%;
+}
+
+.butterfly:nth-child(3) {
+  animation-duration: 7s;
+  left: 50%;
+}
+
+.butterfly:nth-child(4) {
+  animation-duration: 9s;
+  left: 70%;
+}
+
+.butterfly:nth-child(5) {
+  animation-duration: 10s;
+  left: 90%;
+}
+
+/* General styling for the section */
+.about-section {
+  position: relative;
+  background-color: #f8f9fa;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  overflow: hidden; /* To prevent butterflies from spilling out */
+}
+/* Butterfly Background Animation */
+@keyframes butterflyAnimation {
+    0% {
+      transform: translate(0, 0) scale(0.7);
+      opacity: 1;
+    }
+    25% {
+      transform: translate(50px, -50px) scale(1);
+      opacity: 0.8;
+    }
+    50% {
+      transform: translate(100px, 0) scale(1.2);
+      opacity: 0.6;
+    }
+    75% {
+      transform: translate(50px, 50px) scale(1);
+      opacity: 0.8;
+    }
+    100% {
+      transform: translate(0, 0) scale(0.7);
+      opacity: 1;
+    }
+  }
+  
+  .butterfly-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Prevents interaction with the background */
+    z-index: -1; /* Keeps it in the background */
+  }
+  
+  .butterfly {
+    position: absolute;
+    background-image: url('https://via.placeholder.com/50'); /* Butterfly Image URL */
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    animation: butterflyAnimation 10s ease-in-out infinite;
+    opacity: 0.8;
+  }
+  
+  .butterfly:nth-child(1) {
+    animation-duration: 15s;
+    top: 10%;
+    left: 15%;
+  }
+  
+  .butterfly:nth-child(2) {
+    animation-duration: 20s;
+    top: 20%;
+    left: 40%;
+  }
+  
+  .butterfly:nth-child(3) {
+    animation-duration: 18s;
+    top: 30%;
+    left: 60%;
+  }
+  
+  .butterfly:nth-child(4) {
+    animation-duration: 25s;
+    top: 50%;
+    left: 20%;
+  }
+  
+  .butterfly:nth-child(5) {
+    animation-duration: 22s;
+    top: 70%;
+    left: 80%;
+  }
+  
+  .butterfly:nth-child(6) {
+    animation-duration: 28s;
+    top: 80%;
+    left: 10%;
+  }
+  
+  /* Ensure that the rest of the content appears above the butterflies */
+  .about-section {
+    position: relative;
+    z-index: 1;
+  }
+    

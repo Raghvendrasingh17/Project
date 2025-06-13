@@ -1,0 +1,28 @@
+/* Ensure images are half the current size */
+.category-image {
+    width: 100%;
+    height: 100px; /* Halved the height */
+    object-fit: cover; /* Ensure image does not stretch */
+    border-radius: 2px;
+    object-fit: contain; 
+    mix-blend-mode: darken;
+     /* Rounded corners */
+    transition: transform 0.3s ease; /* Animation for hover effect */
+  }
+  
+  /* Adding border animation and scale effect only to the image box */
+  .category-card {
+    position: relative;
+    border: 2px solid transparent; /* Initial border state */
+    padding: 5px;
+    border-radius: 8px; /* Rounded corners */
+    transition: border 0.3s ease; /* Smooth border transition */
+  }
+  
+  
+  
+  /* Hover effect for the image */
+  .category-card:hover .category-image {
+    transform: scale(1.1); /* Slight zoom effect */
+  }
+  

@@ -1,0 +1,44 @@
+
+
+.icon
+{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    font-size: 40px;
+}
+/* Animation for the border */
+@keyframes borderAnimation {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ff6347; /* Example color (Tomato), you can change this */
+  }
+  100% {
+    border-color: transparent;
+  }
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensures the image stays within the bounds */
+}
+
+.slider div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensure image fits inside */
+  background-color: transparent; /* No background color */
+  background-repeat: no-repeat; /* Prevent repeating background image */
+  background-size: cover; /* The image will cover the entire container */
+  background-position: center; /* Center the image */
+}

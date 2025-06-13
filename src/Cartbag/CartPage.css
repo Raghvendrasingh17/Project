@@ -1,0 +1,130 @@
+/* Cart Drawer Styles */
+.cart-drawer {
+  position: fixed;
+  top: 0;
+  right: -100%; /* Start off-screen */
+  width: 450px; /* Increased width */
+  height: 100%;
+  background: linear-gradient(45deg, #ff7f50, #ff1493, #32cd32, #1e90ff, #ffff00); /* Gradient Background */
+  background-size: 400% 400%; /* To allow the animation effect */
+  animation: gradientAnimation 5s ease infinite; /* Apply animation */
+  box-shadow: -4px 0 6px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out; /* Slide effect */
+  z-index: 1050;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Open cart drawer */
+.cart-drawer.open {
+  right: 0; /* Slide in from the right */
+}
+
+/* Gradient Animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Close button */
+.cart-drawer .btn-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Table Styling */
+.table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.table th, .table td {
+  text-align: center;
+}
+
+.table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.table td {
+  padding: 10px;
+}
+
+.table .btn-danger {
+  background-color: #dc3545;
+  border: none;
+  cursor: pointer;
+}
+
+/* Checkout Button */
+.cart-drawer .btn-success {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #28a745;
+  border: none;
+  font-size: 1.2rem;
+}
+
+.cart-drawer h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cart-drawer .text-end {
+  font-size: 1.4rem;
+}
+
+.cart-drawer .text-center {
+  margin-top: 20px;
+}
+
+.cart-drawer .btn-close:hover {
+  color: red;
+}
+
+.table-responsive {
+  margin-top: 20px;
+}
+
+.table th, .table td {
+  vertical-align: middle;
+}
+
+/* Background animation for Cart Page */
+@keyframes backgroundAnimation {
+  0% {
+    background-color: #f0f8ff;
+  }
+  50% {
+    background-color: #e0f7fa;
+  }
+  100% {
+    background-color: #f0f8ff;
+  }
+}
+
+.cart-page {
+  animation: backgroundAnimation 5s ease-in-out infinite;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+/* Optional: Additional styles for the cart page */
+.cart-page .table {
+  border-radius: 8px;
+}

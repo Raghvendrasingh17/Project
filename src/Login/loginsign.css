@@ -1,0 +1,48 @@
+/* Base Card Styling with Border Animation */
+.border-animation {
+    position: relative;
+    border: 2px solid transparent;
+    background-image: linear-gradient(white, white),
+      linear-gradient(to right, #4facfe, #00f2fe);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+  
+  /* Pulsating Border Animation for Sign-Up */
+  .signup-border-animation {
+    animation: pulse-border 2s infinite;
+  }
+  
+  /* Keyframes for Pulsating Effect */
+  @keyframes pulse-border {
+    0% {
+      border-color: #00f2fe;
+      box-shadow: 0 0 10px rgba(0, 242, 254, 0.8);
+    }
+    50% {
+      border-color: #4facfe;
+      box-shadow: 0 0 20px rgba(79, 172, 254, 0.8);
+    }
+    100% {
+      border-color: #00f2fe;
+      box-shadow: 0 0 10px rgba(0, 242, 254, 0.8);
+    }
+  }
+  
+  /* Border Indicator Animation */
+  .border-indicator {
+    height: 5px;
+    width: 100%;
+    background: #007bff;
+    margin-top: -5px;
+    transition: transform 0.4s ease;
+  }
+  
+  .border-login {
+    transform: translateX(0);
+  }
+  
+  .border-signup {
+    transform: translateX(100%);
+  }
+  
